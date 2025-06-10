@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="hero-content">
+    <section className="hero-content animate__animated animate__fadeIn">
       <img
         src="/images/hero/mainIcon.svg"
         alt="main icon"
