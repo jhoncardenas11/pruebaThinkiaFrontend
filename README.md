@@ -13,8 +13,9 @@ Proyecto frontend construido con [Vite](https://vitejs.dev/).
 
 1. Clona el repositorio
 
-    git clone https://github.com/jhoncardenas11/pruebaThinkiaFrontend.git
-    cd pruebaThinkiaFrontend
+    - git clone https://github.com/jhoncardenas11/pruebaThinkiaFrontend.git
+
+    - cd pruebaThinkiaFrontend
 
 2. npm install
 
@@ -25,6 +26,7 @@ Proyecto frontend construido con [Vite](https://vitejs.dev/).
 
 ## Estructura del proyecto
 
+```
 PRUEBATHINKIAFRONTEND/
 ├── public/
 │ ├── fonts/
@@ -47,3 +49,4 @@ PRUEBATHINKIAFRONTEND/
 ├── tsconfig.app.json
 ├── tsconfig.node.json
 └── vite.config.ts
+```
