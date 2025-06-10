@@ -1,0 +1,17 @@
+@use "./base/fonts" as *;
+@use "./base/variables" as *;
+@use "./pages/Home" as *;
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: $f2;
+  }
+}
