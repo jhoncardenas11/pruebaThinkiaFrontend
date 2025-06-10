@@ -1,6 +1,7 @@
 const Footer = () => {
   return (
     <section className="footer-content">
+      <div className="footer__divider"></div>
       <div className="footer__legal">
         <p className="footer__paragraph">
           *Línea Directa asume únicamente los gastos de gestión del servicio
@@ -39,11 +40,13 @@ const Footer = () => {
           alt="tramicar icon"
           className="footer__logo"
         />
-        <img
-          src="/images/footer/lda.svg"
-          alt="lda icon"
-          className="footer__logo"
-        />
+        <a href="tel:7777777">
+          <img
+            src="/images/footer/lda.svg"
+            alt="lda icon"
+            className="footer__logo"
+          />
+        </a>
       </div>
 
       <div className="footer__bottom">
@@ -54,15 +57,15 @@ const Footer = () => {
           <a href="" className="footer__link">
             Política de Privacidad
           </a>
-          <div className="footer__divider">|</div>
+          <div className="footer__separated">|</div>
           <a href="" className="footer__link">
             Política de Cookies
           </a>
-          <div className="footer__divider">|</div>
+          <div className="footer__separated">|</div>
           <a href="" className="footer__link">
             Aviso Legal
           </a>
-          <div className="footer__divider">|</div>
+          <div className="footer__separated">|</div>
           <a href="" className="footer__link">
             Condiciones de Uso
           </a>

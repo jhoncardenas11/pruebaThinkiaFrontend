@@ -1,4 +1,7 @@
 @use "../components/Home/Hero";
+@use "../components/Home/Steps";
+@use "../components/Home/_Advantages.scss";
+@use "../components/Home/Footer";
 
 .home-page {
   width: auto;

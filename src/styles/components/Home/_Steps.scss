@@ -1,0 +1,118 @@
+@use "../../../styles/base/variables" as *;
+@use "../../../styles/base/fonts" as *;
+
+.steps {
+  &-content {
+    width: 95%;
+    margin: 80px auto 0 auto;
+    background-color: rgba($color: $c3, $alpha: 52%);
+    border-radius: 30px;
+    padding: 50px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $f1;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+    width: 70%;
+    margin: auto;
+    @media (max-width: $b6) {
+      width: 95%;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__title-highlight {
+    color: $c2;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 95%;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    @media (max-width: $b6) {
+      grid-template-columns: 1fr;
+      margin: 20px auto 0 auto;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: $c6;
+    z-index: 1;
+    @media (max-width: $b4) {
+      display: none;
+    }
+  }
+
+  &__column {
+    width: auto;
+  }
+
+  &__label {
+    font-family: $f2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: $c4;
+    text-align: center;
+  }
+
+  &__contentcircle {
+    position: relative;
+    height: 80px;
+  }
+
+  &__circle {
+    position: relative;
+    background-color: $c5;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    z-index: 2;
+  }
+
+  &__number {
+    position: relative;
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 30px;
+    color: $white;
+    z-index: 3;
+  }
+
+  &__desc {
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $c4;
+  }
+
+  &__desc-highlight {
+    color: $c2;
+  }
+
+  &__cta {
+    margin: 60px auto 0 auto;
+    @media (max-width: $b6) {
+      width: 95% !important;
+    }
+  }
+}

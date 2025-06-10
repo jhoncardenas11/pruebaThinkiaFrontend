@@ -1,0 +1,93 @@
+@use "../../../styles/base/variables" as *;
+@use "../../../styles/base/fonts" as *;
+
+.footer {
+  &-content {
+    width: 95%;
+    margin: auto;
+  }
+
+  &__divider {
+    margin: 80px auto 0 auto;
+    height: 1px;
+    background-color: $c7;
+  }
+
+  &__legal {
+    margin-top: 30px;
+  }
+
+  &__paragraph {
+    font-family: $f2;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -1.1%;
+    color: $c2;
+  }
+
+  &__logos {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $b6) {
+      display: block;
+      width: 95%;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: auto;
+    object-fit: contain;
+    @media (max-width: $b6) {
+      margin: 30px auto;
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $b6) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $c8;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 10px;
+    @media (max-width: $b6) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $c8;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__separated {
+    color: $c8;
+    margin-top: 2px;
+  }
+}

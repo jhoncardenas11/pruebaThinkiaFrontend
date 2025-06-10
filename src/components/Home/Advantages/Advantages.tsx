@@ -57,8 +57,8 @@ const Advantages = () => {
         </div>
       </div>
 
-      <button className="advantages__cta">
-        Realiza tu trámite <ArrowRight />
+      <button className="advantages__cta btn-type1">
+        Realiza tu trámite <ArrowRight className="arrow-icon" />
       </button>
     </section>
   );

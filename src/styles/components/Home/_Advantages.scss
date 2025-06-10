@@ -1,0 +1,95 @@
+@use "../../../styles/base/variables" as *;
+@use "../../../styles/base/fonts" as *;
+
+.advantages {
+  &-content {
+    width: 95%;
+    margin: 80px auto 0 auto;
+    @media (max-width: $b6) {
+      margin: 40px auto 0 auto;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $f1;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+    width: 70%;
+    margin: auto;
+    @media (max-width: $b6) {
+      width: 95%;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__title-highlight {
+    color: $c2;
+  }
+
+  &__grid {
+    width: 85%;
+    margin: 60px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: stretch;
+    @media (max-width: $b6) {
+      grid-template-columns: 1fr;
+      margin: 40px auto 0 auto;
+    }
+  }
+
+  &__card {
+    min-height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $b6) {
+      min-height: auto;
+    }
+    img {
+      width: auto;
+      height: 50px;
+      object-fit: contain;
+      margin: auto;
+      @media (max-width: $b6) {
+        height: auto;
+      }
+    }
+  }
+
+  &__card-title {
+    min-height: 40px;
+    margin: 0;
+    font-family: $f2;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    @media (max-width: $b6) {
+      min-height: auto;
+      margin-top: 30px;
+    }
+  }
+
+  &__card-desc {
+    min-height: 70px;
+    margin-top: 16px;
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    @media (max-width: $b6) {
+      min-height: auto;
+    }
+  }
+
+  &__cta {
+    margin: 60px auto 0 auto;
+  }
+}
