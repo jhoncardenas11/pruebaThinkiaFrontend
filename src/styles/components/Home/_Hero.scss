@@ -1,0 +1,100 @@
+@use "../../../styles/base/variables" as *;
+@use "../../../styles/base/fonts" as *;
+
+.hero {
+  &-content {
+    width: 95%;
+    margin: auto;
+  }
+
+  &__icon {
+    margin-top: 80px;
+  }
+
+  &__info-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t i";
+    @media (max-width: $b5) {
+      display: block;
+    }
+  }
+
+  &__s1 {
+    grid-area: t;
+  }
+
+  &__title {
+    font-family: $f1, sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 52px;
+
+    @media (max-width: $b6) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__title_p1 {
+    color: $c1;
+    font-weight: 700;
+  }
+
+  &__title_p2 {
+    font-weight: 600;
+  }
+
+  &__title_p3 {
+    color: $c1;
+    font-weight: 600;
+  }
+
+  &__desct1,
+  &__desct2 {
+    font-family: $f2;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: $c2;
+
+    @media (max-width: $b6) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__desct2 {
+    font-weight: 700;
+  }
+
+  &__desc2 {
+    font-family: $f2;
+    font-size: 20px;
+    line-height: 28px;
+
+    @media (max-width: $b6) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__action {
+    margin: 15px 0 0 20px;
+    @media (max-width: $b6) {
+      margin: 15px 0;
+    }
+  }
+
+  &__s2 {
+    grid-area: i;
+    @media (max-width: $b5) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+}

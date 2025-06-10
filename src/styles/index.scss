@@ -2,16 +2,56 @@
 @use "./base/variables" as *;
 @use "./pages/Home" as *;
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-size: 16px;
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: $f2;
+}
+
+body {
+  font-size: 1rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn-type1 {
+  border: none;
+  height: 65px;
+  width: 330px;
+  border-radius: 10px;
+  background-color: $c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: $white;
+  cursor: pointer;
+  font-family: $f2;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.3s ease;
+
+  @media (max-width: $b6) {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .arrow-icon {
+    transition: transform 0.3s ease;
+    margin-top: 3px;
+  }
+
+  &:hover {
+    background-color: rgba(89, 86, 233, 0.9);
+  }
+
+  &:hover .arrow-icon {
+    transform: translateX(5px);
   }
 }
